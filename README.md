@@ -4,12 +4,12 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/<your-username>/vestra"><img src="https://img.shields.io/github/stars/<your-username>/vestra?style=social" alt="GitHub stars" /></a>
-  <a href="https://github.com/<your-username>/vestra/actions"><img src="https://img.shields.io/github/actions/workflow/status/<your-username>/vestra/ci.yml?branch=main&label=build&style=flat" alt="CI" /></a>
-  <a href="https://github.com/<your-username>/vestra/issues"><img src="https://img.shields.io/github/issues/<your-username>/vestra?style=flat" alt="issues" /></a>
+  <a href="https://github.com/TheFakeCreator/Vestra"><img src="https://img.shields.io/github/stars/TheFakeCreator/Vestra?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/TheFakeCreator/Vestra/actions"><img src="https://img.shields.io/github/actions/workflow/status/TheFakeCreator/Vestra/ci.yml?branch=main&label=build&style=flat" alt="CI" /></a>
+  <a href="https://github.com/TheFakeCreator/Vestra/issues"><img src="https://img.shields.io/github/issues/TheFakeCreator/Vestra?style=flat" alt="issues" /></a>
   <a href="https://www.npmjs.com/package/vestra"><img src="https://img.shields.io/npm/v/vestra?label=npm&style=flat" alt="npm version" /></a>
   <a href="https://pnpm.io/"><img src="https://img.shields.io/badge/pnpm-%2300A6FF.svg?style=flat&logo=pnpm&logoColor=white" alt="pnpm" /></a>
-  <a href="https://github.com/<your-username>/vestra"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license" /></a>
+  <a href="https://github.com/TheFakeCreator/Vestra"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="license" /></a>
 </p>
 
 **Vestra** is an open-source, student-driven academic platform designed to help campus communities create, curate, and share high-quality study resources — including notes, roadmaps, past-year questions (PYQs), prerequisites, and course-specific materials.  
