@@ -1,0 +1,42 @@
+{
+  "name": "vestra",
+  "version": "0.1.0",
+  "description": "Open-source, student-driven academic platform for campus-specific study resources (notes, roadmaps, PYQs).",
+  "private": true,
+  "packageManager": "pnpm@10.18.3",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter web dev",
+    "dev:server": "pnpm --filter server dev",
+    "dev": "pnpm -w -r --parallel run dev",
+    "build": "pnpm -w -r run build",
+    "start": "pnpm -w -r run start",
+    "lint": "pnpm -w -r run lint",
+    "test": "pnpm -w -r run test",
+    "bootstrap": "pnpm install"
+  },
+  "main": "index.js",
+  "keywords": [
+    "education",
+    "campus",
+    "notes",
+    "roadmaps",
+    "pyq",
+    "nextjs"
+  ],
+  "author": "TheFakeCreator",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheFakeCreator/vestra.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheFakeCreator/vestra/issues"
+  },
+  "homepage": "https://github.com/TheFakeCreator/vestra#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}

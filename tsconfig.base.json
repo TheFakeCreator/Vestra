@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "nodenext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "incremental": true,
+    "composite": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@vestra/utils": ["packages/utils/src"],
+      "@vestra/shared": ["packages/shared/src"],
+      "@vestra/web": ["apps/web/src"],
+      "@vestra/server": ["apps/server/src"]
+    },
+    "ignoreDeprecations": "6.0",
+    "lib": ["ES2021"]
+  }
+}
