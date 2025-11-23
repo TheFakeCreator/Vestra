@@ -1,4 +1,4 @@
-# Vestra
+# <h1 align="center">Vestra</h1>
 <p align="center">
   <img src="./public/assets/icon128.png" alt="Vestra Logo" width="256" height="256" />
 </p>
@@ -17,6 +17,8 @@ Built *by students, for students*, Vestra reduces the time spent searching for r
 
 > [!IMPORTANT]
 **Important — Application Only:** This repository contains the Vestra application source code only. It is not a hosted service or a ready-made campus site. Campuses that want to use Vestra must deploy and host an instance themselves (for example on Vercel, Netlify, a VPS, or using a cloud provider). See **`⚙️ Getting Started (Local Development)`** below for instructions to run locally and guidance on deployment options.
+
+**Note on Hosted Services (Future):** In the near future we may offer optional deployment services to simplify adoption — either a centralized hosted offering or campus-specific (self-contained) hosting options similar to how some SaaS projects (for example, n8n) provide hosted and self-hosted variants. These would be optional — campuses can continue to self-host or deploy Vestra on their preferred provider.
 
 ---
 
@@ -87,31 +89,33 @@ Verified contributors (seniors/alumni) can:
 - Mark best resources
 - Flag issues
 
-### 🌐 **Student Websites Deployment**
-Students can deploy their own:
-- Portfolio
-- Resume site
-- Project showcase
-- Blogs  
-All under the **campus domain** powered by Vestra.
-
 ---
 
 ## 🏛️ Architectural Overview
 
 ### **Multi-Tenant Design**
 Vestra supports multiple campuses on a single deployment:
+```bash
 /campus-name/course/ee301/topic/per-unit-system
+```
 
-yaml
-Copy code
 
 ### **Tech Stack (Proposed)**
 - **Next.js 14** — App Router, SSR/ISR, fast UI
 - **TailwindCSS** — clean and responsive styling
-- **Supabase / PostgreSQL** — auth, DB, storage
+- **Supabase / PostgreSQL + MongoDB** — auth, DB, storage
 - **Meilisearch** — fast resource & topic search
 - **Vercel** — hosting for frontend + API routes
+- **Redis** — caching & background jobs
+- **Render** — backend hosting
+- **Supabase Edge Functions** — backend serverless functions
+- **drizzle-orm** — type-safe DB queries
+- **Express.js** — backend framework
+- **Sentry** — error monitoring
+- **Jest** — unit testing
+- **Playwright** — end-to-end testing
+- **Vitest** — alternative for faster TDD
+- **PostHog** or **Plausible** — privacy-friendly analytics
 - **GitHub Actions** — CI/CD for deployments
 
 ---

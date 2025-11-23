@@ -1,0 +1,15 @@
+### Tech Stack
+- **Next.js 14** — App Router, SSR/ISR, fast UI
+- **TypeScript** — type-safe JavaScript
+- **TailwindCSS** — clean and responsive styling
+- **Database:** — PostgreSQL hosted on Supabase + MongoDB — relational and document data
+- **Auth:** — Supabase Auth — college email/password, OAuth providers 
+- **ORM:** — drizzle-orm — type-safe DB queries
+- **Search:** — Meilisearch — fast resource & topic search
+- **Background jobs & queues:** BullMQ (Redis) or Supabase Edge Functions + CRON for light jobs.
+- **Real-time & subscriptions:** Supabase Realtime
+- **Hosting / Edge functions:** Vercel (frontend) + Supabase Edge Functions for backend serverless pieces + Render for backend.
+- **Monitoring & analytics:** Sentry (errors) + PostHog or Plausible (privacy-friendly analytics).
+- **CI/CD:** GitHub Actions (build/test/deploy).
+- **Testing:** Jest (unit), Playwright (E2E), Vitest (alternative for faster TDD).
+- **Docs & developer UX:** Storybook for components, good README, CONTRIBUTING, CODE_OF_CONDUCT.
