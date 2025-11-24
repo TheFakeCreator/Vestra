@@ -1,6 +1,12 @@
-# <h1 align="center">Vestra</h1>
+<h1 align="center">Vestra</h1>
 <p align="center">
   <img src="./public/assets/icon128.png" alt="Vestra Logo" width="256" height="256" />
+</p>
+
+<p align="center">
+  <a href="./CONTRIBUTING.md">Contributing</a> •
+  <a href="./CODE_OF_CONDUCT.md">Code of Conduct</a> •
+  <a href="./LICENSE.md">License</a>
 </p>
 
 <p align="center">
@@ -180,29 +186,57 @@ Vestra supports multiple campuses on a single deployment:
 - Git
 - pnpm / npm / yarn
 
-### **Clone the Repository**
-```bash
-git clone https://github.com/<your-username>/vestra.git
-cd vestra
-Install Dependencies
-bash
-Copy code
-npm install
-Set Up Environment Variables
-Create a .env.local file:
+### **Clone the repository**
 
-ini
-Copy code
-DATABASE_URL=postgresql://...
-SUPABASE_URL=...
-SUPABASE_ANON_KEY=...
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
-Run Development Server
-bash
-Copy code
-npm run dev
-Your app is now running at http://localhost:3000 🎉
+```powershell
+git clone https://github.com/TheFakeCreator/vestra.git
+cd vestra
 ```
+
+### **Install dependencies**
+
+Install all workspace dependencies from the repository root using `pnpm`:
+
+```powershell
+pnpm -w install
+```
+
+### **Set up environment**
+
+Create a local env file from the example and edit values (database, keys, hostnames):
+
+```powershell
+Copy-Item .env.example .env.local
+# then open and edit .env.local
+```
+
+Add or confirm these variables in `.env.local` (example):
+
+```ini
+DATABASE_URL=postgresql://user:pass@localhost:5432/vestra
+SUPABASE_URL=https://your-supabase-url
+SUPABASE_ANON_KEY=your-anon-key
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+MEILI_HOST=http://localhost:7700
+MEILI_API_KEY=masterKey
+```
+
+### **Run development servers**
+
+Run each app individually from the repo root (recommended):
+
+```powershell
+pnpm --filter ./packages/server dev
+pnpm --filter ./packages/web dev
+```
+
+Or run both in parallel from the root (if you have the root `dev` script configured):
+
+```powershell
+pnpm dev
+```
+
+Your web app should be available at `http://localhost:3000` by default.
 
 ### 🤝 Contributing
 We welcome contributions from students, alumni, and developers!
@@ -230,10 +264,12 @@ We welcome contributions from students, alumni, and developers!
 - See CONTRIBUTING.md for full guidelines.
 
 ### 🧪 Testing
-```bash
-npm run test
+Run tests from the workspace root:
+
+```powershell
+pnpm -w test
 ```
-- Unit tests (Jest)
+- Unit tests (Jest or Vitest)
 
 - Integration tests
 
